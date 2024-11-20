@@ -55,11 +55,6 @@
 	newBook.setCategory(category);
 	newBook.setUnitsInStock(stock);
 	newBook.setCondition(condition);
-	
-	System.out.println("File Parameter Name: " + filename);
-	System.out.println("Uploaded File Name: " + fileName);
-	System.out.println("Real Path: " + realFolder);
-	
 	newBook.setFilename(fileName);
 
 	dao.addBook(newBook);

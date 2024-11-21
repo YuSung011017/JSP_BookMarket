@@ -8,7 +8,7 @@
 	request.setCharacterEncoding("UTF-8");
 
 	String filename = "";
-	String realFolder = "C:\\codingWorkspace\\JspWorkspace\\BookMarket\\src\\main\\webapp\\resources\\images";
+	String realFolder = request.getServletContext().getRealPath("/resources/images");
 	int maxSize = 5 * 1024 * 1024;
 	String encType = "utf-8";
 	
@@ -25,8 +25,6 @@
 	String unitsInStock = multi.getParameter("unitsInStock");
 	String condition = multi.getParameter("condition");
 	String fileName = multi.getFilesystemName("BookImage");
-	
-
 	
 	int price;
 
